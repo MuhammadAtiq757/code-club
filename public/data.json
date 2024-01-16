@@ -1,0 +1,42 @@
+ [
+  {
+    "image": "https://i.ibb.co/svMTRyL/BG.png",
+    "airlineName": "Biman Bangladesh Airlines",
+    "price": 120.50,
+    "time": "19:00",
+    "date": "Sat, 13 Jan 2024",
+    "location": "Dhaka",
+    "arriveTime": "45 minutes"
+  },
+  {
+    "image": "https://i.ibb.co/svMTRyL/BG.png",
+    "airlineName": "Biman Bangladesh Airlines",
+    "price": 135.75,
+    "time": "21:30",
+    "date": "Sun, 14 Jan 2024",
+    "location": "Dhaka",
+    "arriveTime": "50 minutes"
+  },
+ 
+  {
+    "image": "https://i.ibb.co/svMTRyL/BG.png",
+    "airlineName": "Biman Bangladesh Airlines",
+    "price": 110.00,
+    "time": "12:15",
+    "date": "Mon, 15 Jan 2024",
+    "location": "Dhaka",
+    "arriveTime": "40 minutes"
+  },
+  {
+    "image": "https://i.ibb.co/3WbMWqn/BS.png",
+    "airlineName": "Biman Bangladesh Airlines",
+    "price": 95.25,
+    "time": "08:45",
+    "date": "Tue, 16 Jan 2024",
+    "location": "Dhaka",
+    "arriveTime": "35 minutes"
+  }
+ 
+  
+]
+
