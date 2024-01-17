@@ -238,10 +238,9 @@ data.map(flight => (
       <h5>{flight.location}(DAC)</h5>
     </div>
 
-    <div className="md:col-span-1">
+    <div className="md:col-span-1 text-center">
       <h3>{flight.arriveTime}</h3>
-      <img src={flight.red} alt="" className='mx-auto md:mx-0 ' />
-      <p className='text-center md:text-left'>Non Stop</p>
+      <p className='text-center '>Non Stop</p>
     </div>
 
     <div className="md:col-span-1">
