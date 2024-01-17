@@ -7,6 +7,9 @@ import duns from "../../assets/images/duns.png"
 import iata from "../../assets/images/iata.png"
 import google from "../../assets/images/google.png"
 import { FaFacebook } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 
 const Bank = () => {
@@ -20,7 +23,9 @@ const Bank = () => {
 90/1 Motijheel City Centre Level 25-
 
 B-1, Lift 26 Dhaka 1000, Bangladesh</p>
-<FaFacebook />
+<div className='flex text-red-600 font-bold gap-4 text-2xl mt-2'>
+<FaFacebook />  <FaInstagramSquare /> <FaTwitter /> <FaWhatsappSquare />
+</div>
   </aside> 
   <nav>
     <header className="footer-title">About</header> 

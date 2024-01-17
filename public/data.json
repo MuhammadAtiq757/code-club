@@ -6,7 +6,8 @@
     "time": "19:00",
     "date": "Sat, 13 Jan 2024",
     "location": "Dhaka",
-    "arriveTime": "45 minutes"
+    "arriveTime": "45 minutes",
+    "red": "https://i.ibb.co/s9dvpxm/red-line.png"
   },
   {
     "image": "https://i.ibb.co/svMTRyL/BG.png",
@@ -15,7 +16,8 @@
     "time": "21:30",
     "date": "Sun, 14 Jan 2024",
     "location": "Dhaka",
-    "arriveTime": "50 minutes"
+    "arriveTime": "50 minutes",
+    "red": "https://i.ibb.co/s9dvpxm/red-line.png"
   },
  
   {
@@ -25,7 +27,8 @@
     "time": "12:15",
     "date": "Mon, 15 Jan 2024",
     "location": "Dhaka",
-    "arriveTime": "40 minutes"
+    "arriveTime": "40 minutes",
+    "red": "https://i.ibb.co/s9dvpxm/red-line.png"
   },
   {
     "image": "https://i.ibb.co/3WbMWqn/BS.png",
@@ -34,7 +37,8 @@
     "time": "08:45",
     "date": "Tue, 16 Jan 2024",
     "location": "Dhaka",
-    "arriveTime": "35 minutes"
+    "arriveTime": "35 minutes",
+    "red": "https://i.ibb.co/s9dvpxm/red-line.png"
   }
  
   

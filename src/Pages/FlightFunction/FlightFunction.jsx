@@ -7,6 +7,7 @@ import { GoTriangleLeft } from "react-icons/go";
 import { FaCaretRight } from "react-icons/fa6";
 import { IoMdArrowDropdown } from "react-icons/io";
 
+
 const FlightFunction = () => {
 
     const [rangeValue, setRangeValue] = useState(2500);
@@ -33,12 +34,12 @@ const FlightFunction = () => {
 
 
     return (
-        <div className='container mt-20 mx-auto flex '>
+        <div className='container mt-20 mx-auto flex flex-col items-center lg:flex-row'>
 
             {/* sidbar */}
-            <div className='w-[350px] mr-0 pr-0'>
-                <h2 className='text-center font-semibold text-xl'>seasson Timeout In</h2>
-                <div className='flex items-center justify-center gap-4 mt-8 '>
+            <div className='w-full lg:w-[350px] mr-0 pr-0 mb-4 lg:mb-0 px-6'>
+                <h2 className='text-center font-semibold text-xl mr-8'>seasson Timeout In</h2>
+                <div className='flex items-center justify-center gap-4 mt-8 mr-12'>
                     <p className='bg-red-600 p-4 text-white w-[50px] rounded'>17</p>
                     <p className='bg-red-600 p-4 text-white w-[50px] rounded'>51</p>
                 </div>
@@ -193,65 +194,67 @@ const FlightFunction = () => {
             {/* main part */}
 
 
-            <div className=''> 
+            <div className=' lg:block container mx-auto'> 
 
-<div className='shadow-xl py-6 px-4 w-[600px]'>
-<h1 className='flex items-center justify-center text-center text-3xl font-semibold mb-4'><GoTriangleLeft className='text-red-600 text-5xl' /> Flights From Dhaka to Chittagong <FaCaretRight className='text-red-600 text-4xl' /></h1>
-<div className='grid md:grid-cols-2 gap-2'>
-<div className='bg-indigo-50 p-2s'>
-    <h1 className='text-xl font-sans'>Cheapest</h1>
-    <p>to get the cheapest available flights</p>
-</div>
-<div className='border-2 p-2  border-l-indigo-200 '>
-    <h1 className='text-xl font-sans'>Shortest</h1>
-    <p>to get the cheapest available flights</p>
-</div>
+            <div className='shadow-xl py-6 px-4 w-full md:w-[600px] mx-auto'>
+  <h1 className='flex items-center justify-center text-center text-3xl font-semibold mb-4'>
+    <GoTriangleLeft className='text-red-600 text-5xl' />
+    Flights From Dhaka to Chittagong
+    <FaCaretRight className='text-red-600 text-4xl' />
+  </h1>
+
+  <div className='grid md:grid-cols-2 gap-2'>
+    <div className='bg-indigo-50 p-2 md:p-4'>
+      <h1 className='text-xl font-sans'>Cheapest</h1>
+      <p>to get the cheapest available flights</p>
+    </div>
+
+    <div className='border-2 p-2 md:p-4 border-l-indigo-200'>
+      <h1 className='text-xl font-sans'>Shortest</h1>
+      <p>to get the cheapest available flights</p>
+    </div>
+  </div>
 </div>
 
-
-</div>
 
                  
 
 {
 data.map(flight => (
-    <div key={flight.id} className="card w-[600px] mr-60 bg-base-100 shadow-xl mt-12">
-  <div className="card-body w-full grid md:grid-cols-4 gap-2">
-<div>
-<img className='w-[40px]' src={flight.image} alt="" />  
-<p className='font-sans mt-2'>{flight.airlineName}</p> 
-<h5 className='mt-6'>Price</h5>
-<p className='mt-2 text-xl font-semibold'>BDT {flight.price}</p> 
-<p className='mt-2 text-sm text-green-600'>Partialy Refundable</p>
-</div>  
+<div key={flight.id} className="card w-full md:w-[600px] mx-4 md:mx-auto bg-base-100 shadow-xl mt-12">
+  <div className="card-body grid md:grid-cols-4 gap-6 p-4">
+    <div className="md:col-span-1">
+      <img className='w-8 md:w-24 h-12 md:h-24 mx-auto md:mx-0' src={flight.image} alt="" />
+      <p className='font-sans mt-2 text-center md:text-left'>{flight.airlineName}</p>
+      <h5 className='mt-6 text-center md:text-left'>Price</h5>
+      <p className='mt-2 text-xl font-semibold text-center md:text-left'>BDT {flight.price}</p>
+      <p className='mt-2 text-sm text-green-600 text-center md:text-left'>Partially Refundable</p>
+    </div>
 
-<div>
-<h4>Depart</h4>
-<h5>{flight.time}</h5>
-<h5>{flight.date}</h5>
-<h5>{flight.location}(DAC)</h5>
-</div>  
+    <div className="md:col-span-1">
+      <h4>Depart</h4>
+      <h5>{flight.time}</h5>
+      <h5>{flight.date}</h5>
+      <h5>{flight.location}(DAC)</h5>
+    </div>
 
+    <div className="md:col-span-1">
+      <h3>{flight.arriveTime}</h3>
+      <img src={flight.red} alt="" className='mx-auto md:mx-0 ' />
+      <p className='text-center md:text-left'>Non Stop</p>
+    </div>
 
-<div>
-    <h3>{flight.arriveTime}</h3>
-    <p className='mt-10'>Non Stop</p>
-
-</div> 
-
-<div>
-<h4>Depart</h4>
-<h5>{flight.time}</h5>
-<h5>{flight.date}</h5>
-<h5>{flight.location}(DAC)</h5>
-<button className='btn hover:bg-red-600 font-semibold bg-red-600 text-white rounded-lg mt-16'>Book Now</button>
-<h3 className='text-red-500 font-semibold flex items-center'>Flight Details <IoMdArrowDropdown className='text-2xl' /></h3>
-</div>    
-
-
-
+    <div className="md:col-span-1">
+      <h4>Depart</h4>
+      <h5>{flight.time}</h5>
+      <h5>{flight.date}</h5>
+      <h5>{flight.location}(DAC)</h5>
+      <button className='btn hover:bg-red-600 font-semibold bg-red-600 text-white rounded-lg mt-4 md:mt-16'>Book Now</button>
+      <h3 className='text-red-500 font-semibold flex items-center mt-4 md:mt-0'>Flight Details <IoMdArrowDropdown className='text-2xl' /></h3>
+    </div>
   </div>
 </div>
+
   ))
 
 }
